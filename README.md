@@ -13,6 +13,10 @@ Instructions:
  However, they are not fully functional.
  
 -To run the frontend, install the dependencies using npm install, and then execute it with npm start.
+Resolving OpenSSL Issue in Node.js 17+
+If you encounter an error related to OpenSSL while running npm start, you can temporarily resolve it by executing the following command in PowerShell before starting the application:
+$env:NODE_OPTIONS="--openssl-legacy-provider"; npm start
+
 
 Additional Information:
 The user created with the database script has the following credentials:
